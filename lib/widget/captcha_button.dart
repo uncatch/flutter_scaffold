@@ -9,10 +9,11 @@ import 'package:flutter/widgets.dart';
 class CaptchaButton extends StatefulWidget {
   /// 构建一个倒计时验证码按钮
   const CaptchaButton({
+    Key? key,
     this.duration = const Duration(seconds: 60),
     this.onTimeEnd,
     this.onTimeChanged,
-  });
+  }) : super(key: key);
 
   /// 倒计时
   final Duration duration;
